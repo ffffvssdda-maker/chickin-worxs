@@ -1,0 +1,6 @@
+{
+  "name": "Chickin Worx",
+  "description": "Premium fast-casual chicken restaurant brand website.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -76,7 +76,7 @@ export default function Home() {
                   <div className="w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center text-xl">🔥</div>
                   <div>
                     <p className="text-[10px] font-bold text-gray-400 uppercase">Trending</p>
-                    <p className="text-xs font-bold text-[#1A1A1A]">Ghost Pepper Wings</p>
+                    <p className="text-xs font-bold text-[#1A1A1A]">The Buffalo Sando Big</p>
                   </div>
                 </div>
                 <div className="w-full bg-gray-100 h-1 rounded-full">
@@ -93,7 +93,7 @@ export default function Home() {
               </div>
 
               <div className="relative w-4/5 h-4/5 bg-gray-200 rounded-[40px] shadow-inner rotate-3 flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: "url('https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&q=80&w=800')"}}></div>
+                <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: "url('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2940&auto=format&fit=crop')"}}></div>
               </div>
 
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] border-[40px] border-white/40 rounded-full animate-pulse"></div>
@@ -110,19 +110,19 @@ export default function Home() {
               {[1, 2, 3, 4].map(i => (
                 <img key={i} src={`https://i.pravatar.cc/100?img=${i+10}`} alt="Customer" className="w-12 h-12 rounded-full border-2 border-[#FFC107]" />
               ))}
-              <div className="w-12 h-12 rounded-full border-2 border-[#FFC107] bg-[#1A1A1A] flex items-center justify-center text-white text-xs font-bold w-12 h-12">+2k</div>
+              <div className="w-12 h-12 rounded-full border-2 border-[#FFC107] bg-[#1A1A1A] flex items-center justify-center text-white text-xs font-bold w-12 h-12">+24k</div>
             </div>
             <div>
               <div className="flex text-[#1A1A1A] mb-1">
                 {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-4 h-4 fill-current" />)}
               </div>
-              <p className="text-[#1A1A1A] font-bold text-sm">4.9/5 from 10k+ reviews</p>
+              <p className="text-[#1A1A1A] font-bold text-sm">4.9/5 from 24,296 reviews</p>
             </div>
           </div>
           
           <div className="hidden lg:flex w-px h-12 bg-black/10"></div>
           
-          <p className="text-xl font-bold text-[#1A1A1A] heading-display">"The best chicken sandwich I've ever had, period." — The Foodie Times</p>
+          <p className="text-xl font-bold text-[#1A1A1A] heading-display">"The food was fresh and delicious, and the service was very fast. Yara was very friendly." — Adel Shaker</p>
         </div>
       </section>
 

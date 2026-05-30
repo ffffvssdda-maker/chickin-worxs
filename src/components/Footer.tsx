@@ -77,11 +77,11 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-zinc-400 text-sm">
                 <MapPin className="w-4 h-4 text-[#FF6B00]" />
-                <span>100 Fresh Ave, Food City, FC 90210</span>
+                <span>Swell Lake, Waslet Dahshur Rd, Giza Governorate</span>
               </div>
               <div className="flex items-center space-x-3 text-zinc-400 text-sm">
                 <Phone className="w-4 h-4 text-[#FF6B00]" />
-                <span>1-800-CHICKIN</span>
+                <span>010 10351999</span>
               </div>
               <div className="flex items-center space-x-3 text-zinc-400 text-sm">
                 <Mail className="w-4 h-4 text-[#FF6B00]" />
@@ -92,7 +92,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-zinc-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-zinc-500">
-          <p>&copy; {new Date().getFullYear()} Chickin Worx. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Chickin Worx - تشيكن وركس. All rights reserved.</p>
           <div className="flex items-center space-x-2 mt-4 md:mt-0">
             <span>Halal Certified</span>
             <span className="w-1 h-1 bg-zinc-600 rounded-full"></span>

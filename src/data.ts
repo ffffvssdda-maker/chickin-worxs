@@ -58,31 +58,58 @@ export const menuItems: MenuItem[] = [
     calories: 4500,
     image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=2813&auto=format&fit=crop",
     category: "Family Meals"
+  },
+  {
+    id: '7',
+    name: "The Buffalo Sando Big",
+    description: "Spicy buffalo sauce dipped crispy chicken, ranch, pickles, on a toasted bun.",
+    price: 320,
+    calories: 780,
+    image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2940&auto=format&fit=crop",
+    category: "Sandwiches",
+    popular: true
+  },
+  {
+    id: '8',
+    name: "Honeydream Sandwich",
+    description: "Sweet and savory honey glaze with our crispy chicken breast, lettuce, and mayo.",
+    price: 290,
+    calories: 720,
+    image: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?q=80&w=2787&auto=format&fit=crop",
+    category: "Sandwiches"
+  },
+  {
+    id: '9',
+    name: "Vanilla Ice Cream",
+    description: "Creamy classic vanilla soft serve ice cream cone.",
+    price: 60,
+    calories: 250,
+    image: "https://images.unsplash.com/photo-1563805042-7684c8b9e408?q=80&w=2787&auto=format&fit=crop",
+    category: "Desserts",
+    popular: true
+  },
+  {
+    id: '10',
+    name: "Cazo Cola",
+    description: "Refreshing cold draft cola.",
+    price: 45,
+    calories: 150,
+    image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=2862&auto=format&fit=crop",
+    category: "Drinks"
   }
 ];
 
 export const locations: Location[] = [
   {
     id: '1',
-    name: "Downtown Metro",
-    address: "123 Main Street",
-    city: "Metropolis",
-    state: "NY",
-    zip: "10001",
-    phone: "(555) 123-4567",
-    hours: "10:30 AM - 11:00 PM",
-    coordinates: { lat: 40.7128, lng: -74.0060 }
-  },
-  {
-    id: '2',
-    name: "Westside Village",
-    address: "450 West Ave",
-    city: "Metropolis",
-    state: "NY",
-    zip: "10002",
-    phone: "(555) 987-6543",
-    hours: "10:30 AM - 10:00 PM",
-    coordinates: { lat: 40.7328, lng: -74.0160 }
+    name: "Swell Lake - Zayed",
+    address: "Waslet Dahshur Rd, Next to National Teams Center",
+    city: "Giza (First 6th of October)",
+    state: "Giza Governorate",
+    zip: "12566",
+    phone: "010 10351999",
+    hours: "10:00 AM - 2:00 AM",
+    coordinates: { lat: 30.0074, lng: 30.9736 }
   }
 ];
 

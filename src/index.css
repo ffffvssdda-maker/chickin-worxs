@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Inter:wght@400;600;800&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", "Cairo", ui-sans-serif, system-ui, sans-serif;
   
   --color-primary-500: #FF6B00;
   --color-primary-600: #FF8C33;
@@ -20,6 +20,14 @@ body {
   background-color: #FFFFFF;
   color: var(--color-charcoal);
   -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] {
+  font-family: "Cairo", "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+[dir="rtl"] .heading-display {
+  font-family: "Cairo", "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
 .heading-display {

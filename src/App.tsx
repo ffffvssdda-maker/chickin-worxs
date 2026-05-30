@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Menu from './pages/Menu';
 import Locations from './pages/Locations';
 import Franchise from './pages/Franchise';
+import { LanguageProvider } from './contexts/LanguageContext';
 
 // Mock component for pages that share a simple layout to save resources
 const PlaceholderPage = ({ title }: { title: string }) => (
@@ -23,28 +24,30 @@ const PlaceholderPage = ({ title }: { title: string }) => (
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="menu" element={<Menu />} />
-          <Route path="locations" element={<Locations />} />
-          <Route path="franchise" element={<Franchise />} />
-          
-          {/* Simple Placeholders for the rest of the requested pages */}
-          <Route path="catering" element={<PlaceholderPage title="Catering Services" />} />
-          <Route path="about" element={<PlaceholderPage title="Our Story" />} />
-          <Route path="careers" element={<PlaceholderPage title="Join The Team" />} />
-          <Route path="contact" element={<PlaceholderPage title="Contact Us" />} />
-          <Route path="offers" element={<PlaceholderPage title="Special Offers" />} />
-          <Route path="app" element={<PlaceholderPage title="Mobile App" />} />
-          <Route path="privacy" element={<PlaceholderPage title="Privacy Policy" />} />
-          <Route path="terms" element={<PlaceholderPage title="Terms of Service" />} />
+    <LanguageProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="menu" element={<Menu />} />
+            <Route path="locations" element={<Locations />} />
+            <Route path="franchise" element={<Franchise />} />
+            
+            {/* Simple Placeholders for the rest of the requested pages */}
+            <Route path="catering" element={<PlaceholderPage title="Catering Services" />} />
+            <Route path="about" element={<PlaceholderPage title="Our Story" />} />
+            <Route path="careers" element={<PlaceholderPage title="Join The Team" />} />
+            <Route path="contact" element={<PlaceholderPage title="Contact Us" />} />
+            <Route path="offers" element={<PlaceholderPage title="Special Offers" />} />
+            <Route path="app" element={<PlaceholderPage title="Mobile App" />} />
+            <Route path="privacy" element={<PlaceholderPage title="Privacy Policy" />} />
+            <Route path="terms" element={<PlaceholderPage title="Terms of Service" />} />
 
-          {/* Catch-all */}
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+            {/* Catch-all */}
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </LanguageProvider>
   );
 }

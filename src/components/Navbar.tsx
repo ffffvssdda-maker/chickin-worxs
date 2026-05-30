@@ -4,11 +4,13 @@ import { Menu, X, ShoppingBag } from 'lucide-react';
 import { Button } from './ui/Button';
 import { cn } from '../lib/utils';
 import { motion, AnimatePresence } from 'motion/react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const { lang, toggleLang, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,31 +56,43 @@ export default function Navbar() {
             </Link>
 
             {/* Desktop Nav */}
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   to={link.path}
                   className="font-semibold text-sm text-gray-500 hover:text-[#FF6B00] transition-colors"
                 >
-                  {link.name}
+                  {t(link.name)}
                 </Link>
               ))}
             </nav>
 
             {/* Desktop Actions */}
-            <div className="hidden md:flex items-center gap-6">
-              <div className="text-right hidden lg:block mr-2">
-                <p className="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Estimated Delivery</p>
-                <p className="text-sm font-bold text-[#00C853]">22-30 MINS</p>
+            <div className="hidden md:flex items-center gap-6 rtl:gap-6">
+              <button 
+                onClick={toggleLang} 
+                className="font-bold text-sm text-[#1A1A1A] hover:text-[#FF6B00] px-2"
+              >
+                {lang === 'en' ? 'عربي' : 'EN'}
+              </button>
+              <div className="text-right rtl:text-left hidden lg:block mr-2 rtl:mr-0 rtl:ml-2">
+                <p className="text-[10px] uppercase tracking-widest text-gray-400 font-bold">{t("Estimated Delivery")}</p>
+                <p className="text-sm font-bold text-[#00C853]">{t("22-30 MINS")}</p>
               </div>
               <Button asChild className="bg-[#1A1A1A] text-white px-8 py-3 rounded-full text-sm font-bold hover:scale-105 transition-transform border-none shadow-none card-shadow-none">
-                <Link to="/menu">ORDER NOW</Link>
+                <Link to="/menu">{t("ORDER NOW")}</Link>
               </Button>
             </div>
 
             {/* Mobile menu button */}
-            <div className="md:hidden flex items-center space-x-4">
+            <div className="md:hidden flex items-center space-x-4 rtl:space-x-reverse">
+              <button 
+                onClick={toggleLang} 
+                className="font-bold text-sm text-[#1A1A1A]"
+              >
+                {lang === 'en' ? 'عربي' : 'EN'}
+              </button>
               <Button variant="ghost" className="relative p-2" aria-label="Cart">
                 <ShoppingBag className="w-5 h-5" />
                 <span className="absolute top-1 right-1 w-2 h-2 bg-[#FF6B00] rounded-full"></span>
@@ -110,13 +124,13 @@ export default function Navbar() {
                   to={link.path}
                   className="text-2xl heading-display font-bold text-zinc-900 hover:text-[#FF6B00]"
                 >
-                  {link.name}
+                  {t(link.name)}
                 </Link>
               ))}
             </nav>
             <div className="mt-auto flex flex-col gap-4">
               <Button className="w-full h-14 text-lg rounded-full">
-                <Link to="/menu" className="w-full flex items-center justify-center">Order Now</Link>
+                <Link to="/menu" className="w-full flex items-center justify-center">{t("ORDER NOW")}</Link>
               </Button>
             </div>
           </motion.div>

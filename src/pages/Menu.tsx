@@ -105,7 +105,7 @@ export default function Menu() {
                     <div className="p-5 flex flex-col flex-1">
                       <div className="flex justify-between items-start mb-2 gap-4">
                         <h4 className="heading-display text-lg font-bold text-[#1A1A1A] leading-tight">{item.name}</h4>
-                        <span className="font-bold text-[#FF6B00] whitespace-nowrap">${item.price}</span>
+                        <span className="font-bold text-[#FF6B00] whitespace-nowrap">EGP {item.price}</span>
                       </div>
                       <p className="text-zinc-500 text-sm mb-4 line-clamp-2">{item.description}</p>
                       

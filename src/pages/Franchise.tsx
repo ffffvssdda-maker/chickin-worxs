@@ -44,9 +44,9 @@ export default function Franchise() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: DollarSign, label: "Average Unit Volume", value: "$2.4M" },
+              { icon: DollarSign, label: "Average Unit Volume", value: "EGP 120M" },
               { icon: TrendingUp, label: "YoY Growth", value: "34%" },
-              { icon: Award, label: "Initial Investment", value: "$350k+" },
+              { icon: Award, label: "Initial Investment", value: "EGP 17M+" },
               { icon: Users, label: "Locations Nationwide", value: "50+" }
             ].map((stat, idx) => (
               <div key={idx} className="bg-[#FAFAFA] p-8 rounded-3xl border border-zinc-100 text-center">
@@ -94,10 +94,10 @@ export default function Franchise() {
             <div className="space-y-2">
               <label className="text-sm font-bold text-[#1A1A1A]">Liquid Capital Available</label>
               <select className="w-full bg-zinc-50 border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#FF6B00]">
-                <option>$100k - $250k</option>
-                <option>$250k - $500k</option>
-                <option>$500k - $1M</option>
-                <option>$1M+</option>
+                <option>EGP 5M - 12.5M</option>
+                <option>EGP 12.5M - 25M</option>
+                <option>EGP 25M - 50M</option>
+                <option>EGP 50M+</option>
               </select>
             </div>
             

@@ -153,7 +153,7 @@ export default function Home() {
                 <div className="h-64 overflow-hidden relative">
                   <img src={item.image} alt={item.name} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
                   <div className="absolute top-4 right-4 bg-white/90 backdrop-blur text-[#1A1A1A] font-bold px-3 py-1 rounded-full shadow-sm">
-                    ${item.price}
+                    EGP {item.price}
                   </div>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
@@ -285,7 +285,7 @@ export default function Home() {
             
             <div className="lg:w-1/2 relative z-10 grid grid-cols-2 gap-4">
               <div className="bg-white/10 backdrop-blur border border-white/10 p-6 rounded-2xl">
-                <div className="text-[#FFC107] text-3xl heading-display font-black mb-2">$2M+</div>
+                <div className="text-[#FFC107] text-3xl heading-display font-black mb-2">EGP 100M+</div>
                 <div className="text-white font-medium">Average Unit Volume</div>
               </div>
               <div className="bg-white/10 backdrop-blur border border-white/10 p-6 rounded-2xl">
